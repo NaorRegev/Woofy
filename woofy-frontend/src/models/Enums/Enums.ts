@@ -1,0 +1,56 @@
+export enum HOME_CONDITIONS {
+    HOME = 'HOME',
+    APARTMENT = 'APARTMENT',
+    HAS_FENCE_YARD = 'HAS_FENCE_YARD',
+    DOG_ALLOWED_ON_FURNITURE = 'DOG_ALLOWED_ON_FURNITURE',
+    DOG_ALLOWED_ON_BED = 'DOG_ALLOWED_ON_BED',
+    NON_SMOKING = 'NON_SMOKING'
+}
+
+export enum PETS_IN_HOME {
+    OWN_A_DOG = 'OWN_A_DOG',
+    OWN_A_CAT = 'OWN_A_CAT',
+    OWN_CAGED_PET = 'OWN_CAGED_PET',
+    HAS_CHILDREN = 'HAS_CHILDREN',
+    ONLY_ONE_CLIENT_AT_A_TIME = 'ONLY_ONE_CLIENT_AT_A_TIME'
+}
+export enum BUSINESS_TYPES {
+    BOARDING = 'BOARDING',
+    DOG_WALK = 'DOG_WALK',
+    DOG_SITTER = 'DOG_SITTER',
+    DAY_CARE = 'DAY_CARE',
+    ALL = 'ALL'
+}
+
+export enum WEEKDAYS {
+    SUNDAY = 'SUNDAY',
+    MONDAY = 'MONDAY',
+    TUESDAY = 'TUESDAY',
+    WEDNESDAY = 'WEDNESDAY',
+    THURSDAY = 'THURSDAY',
+    FRIDAY = 'FRIDAY',
+    SATURDAY = 'SATURDAY',
+}
+export enum Age {
+    PUPPY = 'PUPPY',
+    ADULT = 'ADULT',
+    SENIOR = 'SENIOR',
+}
+
+export enum Size {
+    SMALL = 'SMALL',
+    MEDIUM = 'MEDIUM',
+    LARGE = 'LARGE',
+    GIANT = 'GIANT'
+}
+
+export enum TrainingLevel {
+    BEGINNER = 'BEGINNER',
+    INTERMEDIATE = 'INTERMEDIATE',
+    ADVANCED = 'ADVANCED'
+}
+
+export enum ROLE{
+    CUSTOMER = 'CUSTOMER',
+    BUSINESS = 'BUSINESS',
+}

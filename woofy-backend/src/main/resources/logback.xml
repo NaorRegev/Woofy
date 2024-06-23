@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <property name="LOG_FILE" value="logs/Woofy.log"/>
+
+    <conversionRule conversionWord="highlight" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
+
+    <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_FILE}</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/archived/Woofy.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each archived file, size max 1MB -->
+            <maxFileSize>1MB</maxFileSize>
+            <!-- total size of all archive files, if total size > 500MB,
+				it will delete old archived file -->
+            <totalSizeCap>500MB</totalSizeCap> <!-- Adjusted total size cap -->
+            <!-- 200 days to keep -->
+            <maxHistory>200</maxHistory>
+        </rollingPolicy>
+
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5highlight(%-5level) %logger{36} - %msg%n</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %d{HH:mm:ss.SSS} [%t] %-5highlight(%-5level) %logger{36} - %msg%n
+            </Pattern>
+            <charset>utf-8</charset>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE-ROLLING"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <!-- Adjust log levels for specific packages and libraries -->
+    <logger name="org.springframework.boot" level="WARN"/>
+    <logger name="ch.qos.logback" level="ERROR"/>
+
+    <!-- Define a shutdownHook to move the current log file to the archived folder -->
+    <shutdownHook class="ch.qos.logback.core.hook.DelayingShutdownHook">
+        <appender-ref ref="FILE-ROLLING"/>
+    </shutdownHook>
+
+</configuration>
