@@ -19,10 +19,10 @@ Receive real-time notifications about your bookings, service updates, and caregi
 
 
 ![image](https://github.com/NaorRegev/Woofy/assets/71181322/b5e509cf-96e5-4308-9912-fc77b0fee260)
-![image](https://github.com/NaorRegev/Woofy/assets/71181322/49a1835a-cfc4-4365-bb04-66feba611eda)
-![image](https://github.com/NaorRegev/Woofy/assets/71181322/6d53dc19-f824-49f9-9908-ad812400cd2b)
 ![image](https://github.com/NaorRegev/Woofy/assets/71181322/90ac0eae-930d-4978-ae28-3c29ecaf6ebd)
 ![image](https://github.com/NaorRegev/Woofy/assets/71181322/d63f4bba-c638-4879-b426-32ca21751967)
+![image](https://github.com/NaorRegev/Woofy/assets/71181322/49a1835a-cfc4-4365-bb04-66feba611eda)
+![image](https://github.com/NaorRegev/Woofy/assets/71181322/6d53dc19-f824-49f9-9908-ad812400cd2b)
 ![image](https://github.com/NaorRegev/Woofy/assets/71181322/19c505c1-db16-4a61-8a40-4de66eace9c1)
 ![image](https://github.com/NaorRegev/Woofy/assets/71181322/030715db-c3b6-4b6e-bf68-03cfc6fdbcdc)
 ![image](https://github.com/NaorRegev/Woofy/assets/71181322/60760656-991f-44ba-a403-33e7ce0afcb4)
