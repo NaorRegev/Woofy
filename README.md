@@ -32,3 +32,7 @@ Receive real-time notifications about your bookings, service updates, and caregi
 ![image](https://github.com/NaorRegev/Woofy/assets/71181322/ac9f5aa2-0f72-4a99-8d9d-e6d19289235e)
 
 
+
+https://github.com/user-attachments/assets/6af97da9-c063-4750-91f3-1f5a1e8301a8
+
+
